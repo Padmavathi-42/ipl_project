@@ -1,246 +1,210 @@
-🏏 IPL Momentum Intelligence Agent
-Real-Time Match Analytics & Fantasy Decision Engine (Agentic AI)
+# 🏏 IPL Momentum Intelligence Agent
 
-📌 Overview
-The IPL Momentum Intelligence Agent is an Agentic AI-powered system that provides real-time cricket match insights, win probability predictions, and fantasy cricket recommendations.
-Instead of showing raw statistics, the system behaves like a professional cricket analyst, delivering:
+### Real-Time Match Analytics & Fantasy Decision Engine (Agentic AI)
 
+---
 
-Key insights
+## 📌 Overview
 
+The **IPL Momentum Intelligence Agent** is an **Agentic AI-powered system** that provides real-time cricket match insights, win probability predictions, and fantasy cricket recommendations.
 
-Supporting data
+Instead of showing raw statistics, the system behaves like a **professional cricket analyst**, delivering:
 
+* Key insights
+* Supporting data
+* Actionable recommendations
 
-Actionable recommendations
+---
 
+## 🚀 Key Features
 
+### 🔴 Live Match Analysis
 
-🚀 Key Features
-🔴 Live Match Analysis
+* Tracks score, wickets, overs, run rate
+* Identifies match phase (Powerplay / Middle / Death)
+* Provides context-aware insights
 
+---
 
-Tracks score, wickets, overs, run rate
+### 📈 Player Momentum Engine *(Core Innovation)*
 
+* Custom **momentum score (0–100)**
+* Labels players as:
 
-Identifies match phase (Powerplay / Middle / Death)
+  * 🔥 Hot
+  * 🌤️ Warm
+  * ❄️ Cold
+* Based on performance trends and match impact
 
+---
 
-Provides context-aware insights
+### 📊 Win Probability Prediction
 
+* Uses:
 
+  * Run rate vs required run rate
+  * Wickets in hand
+  * Match pressure
+* Outputs:
 
-📈 Player Momentum Engine (Core Innovation)
+  * Batting team win %
+  * Bowling team win %
+  * Clear prediction summary
 
+---
 
-Custom momentum score (0–100)
+### 🧠 Fantasy XI Recommendation
 
+* Suggests:
 
-Labels players as:
+  * Captain & Vice-Captain
+  * Differential picks (low ownership players)
+  * Players to avoid
+  * Complete playing XI
 
+---
 
-🔥 Hot
+### 🏟️ Historical Venue Insights
 
+* Pitch behavior analysis
+* Average scores
+* Chase success rates
+* Venue-based strategic insights
 
-🌤️ Warm
+---
 
+## 🧩 Tech Stack
 
-❄️ Cold
+* **Python**
+* **Google ADK (Agent Development Kit)**
+* **Gemini API (gemini-flash-latest)**
+* **FastAPI (via ADK Web Server)**
 
+---
 
+## ⚙️ Project Structure
 
+```
+ipl_agent/
+│
+├── ipl_agent/
+│   ├── __init__.py
+│   └── agent.py
+│
+├── .env
+├── .gitignore
+├── requirements.txt
+└── README.md
+```
 
-Based on performance trends and match impact
+---
 
+## 🔧 Setup & Installation
 
+### 1️⃣ Clone the Repository
 
-📊 Win Probability Prediction
+```
+git clone https://github.com/Padmavathi-42/ipl_project.git
+cd ipl_project
+```
 
+---
 
-Uses:
+### 2️⃣ Create Virtual Environment
 
+```
+python -m venv venv
+venv\Scripts\activate
+```
 
-Run rate vs required run rate
+---
 
+### 3️⃣ Install Dependencies
 
-Wickets in hand
-
-
-Match pressure
-
-
-
-
-Outputs:
-
-
-Batting team win %
-
-
-Bowling team win %
-
-
-Clear prediction summary
-
-
-
-
-
-🧠 Fantasy XI Recommendation
-
-
-Suggests:
-
-
-Captain & Vice-Captain
-
-
-Differential picks (low ownership players)
-
-
-Players to avoid
-
-
-Complete playing XI
-
-
-
-
-
-🏟️ Historical Venue Insights
-
-
-Pitch behavior analysis
-
-
-Average scores
-
-
-Chase success rates
-
-
-Venue-based strategic insights
-
-
-
-🧩 Tech Stack
-
-
-Python
-
-
-Google ADK (Agent Development Kit)
-
-
-Gemini API (gemini-flash-latest)
-
-
-FastAPI (via ADK Web Server)
-
-
-
-⚙️ Project Structure
-ipl_agent/│├── ipl_agent/│   ├── __init__.py│   └── agent.py│├── .env├── .gitignore├── requirements.txt└── README.md
-
-🔧 Setup & Installation
-1️⃣ Clone the Repository
-git clone https://github.com/Padmavathi-42/ipl_project.gitcd ipl_project
-
-2️⃣ Create Virtual Environment
-python -m venv venvvenv\Scripts\activate
-
-3️⃣ Install Dependencies
+```
 pip install -r requirements.txt
+```
 
-4️⃣ Add API Key
-Create a .env file:
-GOOGLE_API_KEY=your_api_key_hereGOOGLE_GENAI_USE_VERTEXAI=0
+---
 
-5️⃣ Run the Project
+### 4️⃣ Add API Key
+
+Create a `.env` file:
+
+```
+GOOGLE_API_KEY=your_api_key_here
+GOOGLE_GENAI_USE_VERTEXAI=0
+```
+
+---
+
+### 5️⃣ Run the Project
+
+```
 adk web --port 8001
+```
+
 Open in browser:
-👉 http://127.0.0.1:8001
+👉 [http://127.0.0.1:8001](http://127.0.0.1:8001)
 
-🧠 How It Works (Agentic Flow)
+---
 
+## 🧠 How It Works (Agentic Flow)
 
-Agent receives user query
+1. Agent receives user query
+2. Calls `get_live_match_state`
+3. Chains tools intelligently:
 
+   * Momentum → Prediction → Fantasy
+4. Generates expert-style response
 
-Calls get_live_match_state
+---
 
+## 💡 Example Use Cases
 
-Chains tools intelligently:
+* “Who is likely to win this match?”
+* “Best captain for fantasy team?”
+* “Current match situation analysis”
 
+---
 
-Momentum → Prediction → Fantasy
+## 🌟 Innovation Highlights
 
+* ✅ Agentic AI with tool chaining
+* ✅ Custom **Momentum Scoring Algorithm**
+* ✅ Multi-layer decision system
+* ✅ Analyst-style intelligent responses
 
+---
 
+## 📊 Novelty
 
-Generates expert-style response
+⭐ **4/5**
 
+* Strong system design + agentic behavior
+* Unique momentum-based approach
+* Limited by mock data (can be improved with real APIs)
 
+---
 
-💡 Example Use Cases
+## 🔮 Future Improvements
 
+* 🔗 Real-time cricket API integration
+* 🤖 Machine learning-based predictions
+* 📊 Visual dashboards
+* 🌍 Multi-match live tracking
 
-“Who is likely to win this match?”
+---
 
+## 👩‍💻 Author
 
-“Best captain for fantasy team?”
+**Padmavathi**
+GitHub: [https://github.com/Padmavathi-42](https://github.com/Padmavathi-42)
 
+---
 
-“Current match situation analysis”
+## 📜 License
 
+This project is for educational and demonstration purposes.
 
-
-🌟 Innovation Highlights
-
-
-✅ Agentic AI with tool chaining
-
-
-✅ Custom Momentum Scoring Algorithm
-
-
-✅ Multi-layer decision system
-
-
-✅ Analyst-style intelligent responses
-
-
-
-📊 Novelty
-⭐ 4/5
-
-
-Strong system design + agentic behavior
-
-
-Unique momentum-based approach
-
-
-Limited by mock data (can be improved with real APIs)
-
-
-
-🔮 Future Improvements
-
-
-🔗 Real-time cricket API integration
-
-
-🤖 Machine learning-based predictions
-
-
-📊 Visual dashboards
-
-
-🌍 Multi-match live tracking
-
-
-
-👩‍💻 Author
-Padmavathi
-GitHub: https://github.com/Padmavathi-42
+---
